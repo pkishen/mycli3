@@ -4,11 +4,11 @@ var shell = require('shelljs');
 class ByeCommand extends Command {
   async run() {
     const {flags} = this.parse(ByeCommand)
-    const name = flags.name || 'world'
+    const name = flags.name || 'PK'
     this.log(`hello ${name} from /Users/parthukishen/Documents/ML/oclif-my/mycli3/src/commands/bye.js`)
-    shell.exec('sh commands/scripts/test.sh');
+    shell.exec('sh mycli3/src/commands/scripts/test.sh');
     console.log('second shell');
-    shell.exec('sh scripts/test.sh');
+    shell.exec('sh mycli3/scripts/test.sh');
   }
 }
 
